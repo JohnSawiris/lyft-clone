@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 
 function Middle(props) {
   return(
@@ -43,6 +43,14 @@ function Middle(props) {
       </div>
     </div>
   );
+}
+
+Middle.propTypes = {
+  img: PropTypes.any,
+  text: PropTypes.string,
+  title: PropTypes.string,
+  paragraph: PropTypes.string,
+  order: PropTypes.object
 }
 
 export default Middle;

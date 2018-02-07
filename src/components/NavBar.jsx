@@ -7,7 +7,9 @@ function NavBar() {
       <style jsx>{`
           .navContainer {
             display: flex;
-            margin-top: 1rem;
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
             justify-content: space-between;
           }
           .logo {
