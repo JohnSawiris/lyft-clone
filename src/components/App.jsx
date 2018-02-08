@@ -6,6 +6,9 @@ function App() {
   return(
     <div>
       <style global jsx>{`
+          img {
+            vertical-align: bottom;
+          }
           body {
             margin: 0;
             padding: 0;
