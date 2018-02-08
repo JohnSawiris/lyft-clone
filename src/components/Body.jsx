@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Middle from './Middle';
 import ProductsAndNews from './ProductsAndNews';
+import FindLyftNYourCity from './FindLyftNYourCity';
 
 import imgs from './data';
 import products from './products';
@@ -35,6 +36,7 @@ function Body() {
           )}
         </div>
       </div>
+      <FindLyftNYourCity />
     </div>
   );
 }

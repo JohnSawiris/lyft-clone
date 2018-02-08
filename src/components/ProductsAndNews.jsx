@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function ProductsAndNews(props) {
   return(
     <div className="section">
