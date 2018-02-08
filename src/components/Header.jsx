@@ -14,7 +14,7 @@ function Header() {
         }
         .lyftSign {
           position: absolute;
-          top: -300px;
+          top: -180px;
           width: 100%;
           z-index: -33333;
         }
@@ -22,7 +22,6 @@ function Header() {
           .lyftSign {
             top: -40px;
             max-width: 100%;
-            width: 1500px;
           }
         }
         @media (max-width: 900px) {

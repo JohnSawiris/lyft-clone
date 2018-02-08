@@ -1,6 +1,8 @@
 import React from 'react';
 import NavBar from './NavBar';
 import Body from './Body';
+import FindLyftNYourCity from './FindLyftNYourCity';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return(
@@ -22,7 +24,10 @@ function App() {
           }
       `}</style>
       <NavBar />
-      <Body />
+      <Switch>
+        <Route exact path='/' component={Body} />
+        <Route path='/middle' component={FindLyftNYourCity} />
+      </Switch>
     </div>
   );
 }

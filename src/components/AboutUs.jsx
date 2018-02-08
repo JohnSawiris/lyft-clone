@@ -26,9 +26,13 @@ function AboutUs() {
           .phone {
             display: inline-block;
             padding: 2rem;
-            padding-left: 6rem;
             max-width: 100%;
             width: 450px;
+          }
+          @media (max-width: 1500px) {
+            .phone {
+              padding: 0;
+            }
           }
           @media (max-width: 900px) {
             .aboutUs {

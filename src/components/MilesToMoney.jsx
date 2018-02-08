@@ -6,11 +6,10 @@ function MilesToMoney() {
       <style jsx>{`
         .miletomoney {
           display: block;
-          margin-left: 50%;
-          width: 700px;
+          width: 500px;
           background-color: #fff;
           color: purple;
-          align-self: flex-start;
+          align-self: flex-end;
           padding: 3rem 4rem 2rem;
           text-transform: uppercase;
         }
@@ -24,6 +23,8 @@ function MilesToMoney() {
         .btn {
           background-color: #ff00bf;
           color: #fff;
+          outline: 0;
+          border-color: #ff00bf;
           border-radius: 5px;
           font-size: 1rem;
           padding: 1rem;
@@ -45,7 +46,7 @@ function MilesToMoney() {
           }
         }
       `}</style>
-    <h1>turn miles <br></br>into money</h1>
+      <h1>turn miles <br></br>into money</h1>
       <p>sign up to drive with lyft.</p>
       <p className="contact">Phone Number</p>
       <hr />

@@ -26,13 +26,13 @@ function Body() {
       <Header />
       {imgs.map((img, i) =>
         <Middle {...img}
-                key={i}/>
+          key={i}/>
       )}
       <div className="bgWhite">
         <div className="sectionContainer">
           {products.map((product, i) =>
             <ProductsAndNews {...product}
-                              key={i}/>
+              key={i}/>
           )}
         </div>
       </div>

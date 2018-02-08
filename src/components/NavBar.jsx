@@ -1,10 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import lyftLogo from '../assets/imgs/logo.png';
 
 function NavBar() {
+  const routerLinks = {
+    display: 'inline-block',
+    padding:  '1rem',
+    textAlign: 'center',
+    textDecoration: 'none',
+    fontSize: '19px',
+    color: '#fff',
+    flex: '1',
+    alignSelf: 'center',
+    transition: 'all .4s ease-in'
+  };
   return(
     <nav className="navContainer">
-      <style jsx>{`
+      <style global jsx>{`
           .navContainer {
             display: flex;
             position: sticky;
@@ -23,17 +35,6 @@ function NavBar() {
             margin-right: 8rem;
             padding: .4rem;
           }
-          .links a {
-            display: inline-block;
-            padding: 1rem;
-            text-align: center;
-            text-decoration: none;
-            font-size: 19px;
-            color: #fff;
-            flex: 1;
-            align-self: center;
-            transition: all .4s ease-in;
-          }
           .links a:hover {
             background-color: rgba(255,255,255,0.2);
           }
@@ -42,6 +43,7 @@ function NavBar() {
             text-align: center;
             padding: 1rem 2.5rem;
             font-size: 1rem;
+            margin-left: 1rem;
             background-color: transparent;
             border: 1px solid #fff;
             border-radius: 5px;
@@ -51,13 +53,14 @@ function NavBar() {
           }
           .logIn:hover {
             background-color: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.6);
           }
       `}</style>
-    <a href="#"><img className="logo" src={lyftLogo} /></a>
+      <Link to="/"><img className="logo" src={lyftLogo} /></Link>
       <div className="links">
-        <a href="#">Drive</a>
-        <a href="#">Explore</a>
-        <a href="#">Help</a>
+        <Link style={routerLinks} to="">Drive</Link>
+        <Link style={routerLinks} to="#">Explore</Link>
+        <Link style={routerLinks} to="#">Help</Link>
         <button className="logIn">Log In</button>
       </div>
     </nav>

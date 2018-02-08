@@ -21,9 +21,12 @@ function Middle(props) {
           font-size: 2rem;
         }
         .image {
+          display: flex;
           flex: 2;
         }
         .image img {
+          flex: 1;
+          object-fit: cover;
           width: 100%;
         }
         .paragraph {
@@ -31,6 +34,23 @@ function Middle(props) {
           line-height: 2rem;
           font-size: 1.2rem;
           font-weight 300;
+        }
+        @media(max-width: 1000px) {
+          .middleContianer {
+            flex-wrap: wrap;
+            width: 100%;
+          }
+          .image, .text {
+            display: block;
+            width: 100%;
+            flex-basis: 100%;
+          }
+          .text {
+            order: 0;
+          }
+          .image {
+            order: 2;
+          }
         }
       `}</style>
       <div className="text">
@@ -51,6 +71,6 @@ Middle.propTypes = {
   title: PropTypes.string,
   paragraph: PropTypes.string,
   order: PropTypes.object
-}
+};
 
 export default Middle;

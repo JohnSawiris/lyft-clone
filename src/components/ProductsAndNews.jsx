@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 
 function ProductsAndNews(props) {
   return(
@@ -32,5 +32,11 @@ function ProductsAndNews(props) {
     </div>
   );
 }
+
+ProductsAndNews.propTypes = {
+  text: PropTypes.string,
+  title: PropTypes.string,
+  paragraph: PropTypes.string
+};
 
 export default ProductsAndNews;
