@@ -14,7 +14,7 @@ function NavBar() {
           }
           .logo {
             width: 60px;
-            margin: 2rem 3rem;
+            margin: 1rem 2rem;
           }
           .links {
             width: 600px;
